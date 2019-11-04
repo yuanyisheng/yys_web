@@ -1,0 +1,15 @@
+# tomcat config
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8080
+  servlet:
+    context-path: /
+
+# spring config
+spring:
+  # 环境 dev:开发环境/test:预生产环境/prod:生成环境
+  profiles:
+    active: dev
